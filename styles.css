@@ -1,0 +1,247 @@
+:root {
+  --barca-blue: #004d98;
+  --barca-red: #a50044;
+  --gold: #ffcf40;
+  --ink: #f7f8ff;
+  --surface: #0f152b;
+  --surface-alt: #141d3f;
+  --muted: #bfc6e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(120deg, rgb(6 10 26 / 95%), rgb(6 10 26 / 75%)),
+    repeating-linear-gradient(
+      90deg,
+      var(--barca-blue) 0 70px,
+      var(--barca-red) 70px 140px
+    );
+  min-height: 100vh;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  background: rgb(8 12 31 / 92%);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
+}
+
+.brand {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.65rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.main-nav a,
+.mobile-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover,
+.mobile-nav a:hover {
+  color: var(--gold);
+}
+
+.menu-btn {
+  display: none;
+  border: 1px solid rgb(255 255 255 / 35%);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.45rem 0.75rem;
+}
+
+.mobile-nav {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.9rem 1rem 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.hero-content,
+.score-card,
+.news article,
+.fixtures article,
+.player-cards article,
+.shop-grid article {
+  background: rgb(14 20 48 / 88%);
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.hero-content h1,
+.section-head h2 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.8rem, 3.8vw, 3rem);
+  line-height: 1.1;
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-content p {
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+}
+
+.btn {
+  padding: 0.62rem 0.95rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--barca-red), #d00058);
+  color: white;
+}
+
+.secondary {
+  border: 1px solid rgb(255 255 255 / 35%);
+  color: var(--ink);
+}
+
+.score-card .competition,
+.score-card .meta {
+  color: var(--muted);
+}
+
+.clubs {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+section {
+  margin-top: 1.7rem;
+}
+
+.section-head {
+  margin-bottom: 0.8rem;
+}
+
+.news-grid,
+.player-cards,
+.shop-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.news article h3,
+.player-cards article h3,
+.shop-grid article h3 {
+  margin-top: 0;
+}
+
+.news article p,
+.player-cards article p,
+.shop-grid article p {
+  color: var(--muted);
+}
+
+.fixture-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.fixtures article {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.fixtures time {
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.fixtures span {
+  border: 1px solid rgb(255 255 255 / 20%);
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.87rem;
+}
+
+.shop-grid a {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 1.3rem;
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

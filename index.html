@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FC Barcelona | Blaugrana Spirit</title>
+    <meta
+      name="description"
+      content="Unofficial FC Barcelona-inspired fan website with club highlights, fixtures, squad, and fan store sections."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="brand">FCB</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#latest">Latest</a>
+        <a href="#matches">Matches</a>
+        <a href="#squad">Squad</a>
+        <a href="#shop">Store</a>
+      </nav>
+      <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu">
+        Menu
+      </button>
+    </header>
+
+    <div id="mobile-menu" class="mobile-nav" hidden>
+      <a href="#latest">Latest</a>
+      <a href="#matches">Matches</a>
+      <a href="#squad">Squad</a>
+      <a href="#shop">Store</a>
+    </div>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <p class="label">Més que un club</p>
+          <h1 id="hero-heading">Welcome to the Blaugrana Arena</h1>
+          <p>
+            Experience the energy of FC Barcelona with club news, match previews,
+            iconic players, and fan exclusives in one place.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#matches">See Upcoming Match</a>
+            <a class="btn secondary" href="#shop">Explore Fan Shop</a>
+          </div>
+        </div>
+        <aside class="score-card" aria-label="Featured match card">
+          <h2>Next Fixture</h2>
+          <p class="competition">LaLiga • Matchday 32</p>
+          <div class="clubs">
+            <span>Barcelona</span>
+            <strong>vs</strong>
+            <span>Sevilla</span>
+          </div>
+          <p class="meta">Camp Nou • 20:00 CET • Saturday</p>
+        </aside>
+      </section>
+
+      <section id="latest" class="news" aria-labelledby="latest-title">
+        <div class="section-head">
+          <p class="label">Latest Stories</p>
+          <h2 id="latest-title">Inside Barça</h2>
+        </div>
+        <div class="news-grid">
+          <article>
+            <h3>Young Stars Shine in Training</h3>
+            <p>
+              Academy talents step up as first-team sessions intensify ahead of a
+              crucial run of fixtures.
+            </p>
+          </article>
+          <article>
+            <h3>Coach Focuses on High Pressing</h3>
+            <p>
+              Tactical drills emphasize quick recovery, narrow shape, and direct
+              transitions in the final third.
+            </p>
+          </article>
+          <article>
+            <h3>Camp Nou Night Atmosphere Returns</h3>
+            <p>
+              Supporters prepare a spectacular choreography to lift the team for a
+              top-of-the-table battle.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="matches" class="fixtures" aria-labelledby="fixtures-title">
+        <div class="section-head">
+          <p class="label">Matches</p>
+          <h2 id="fixtures-title">Upcoming Fixtures</h2>
+        </div>
+        <div class="fixture-list">
+          <article>
+            <time datetime="2026-04-10">10 Apr</time>
+            <p>Barcelona vs Sevilla</p>
+            <span>Home</span>
+          </article>
+          <article>
+            <time datetime="2026-04-17">17 Apr</time>
+            <p>Valencia vs Barcelona</p>
+            <span>Away</span>
+          </article>
+          <article>
+            <time datetime="2026-04-24">24 Apr</time>
+            <p>Barcelona vs Athletic Club</p>
+            <span>Home</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="squad" class="squad" aria-labelledby="squad-title">
+        <div class="section-head">
+          <p class="label">Team</p>
+          <h2 id="squad-title">Key Players</h2>
+        </div>
+        <div class="player-cards">
+          <article>
+            <h3>Marc-André ter Stegen</h3>
+            <p>Goalkeeper • Captain-level leadership and elite distribution.</p>
+          </article>
+          <article>
+            <h3>Pedri</h3>
+            <p>Midfielder • Vision, composure, and creative link-up play.</p>
+          </article>
+          <article>
+            <h3>Robert Lewandowski</h3>
+            <p>Forward • Ruthless finishing and world-class movement.</p>
+          </article>
+          <article>
+            <h3>Lamine Yamal</h3>
+            <p>Winger • Fearless dribbling and explosive pace on the flank.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="shop" class="shop" aria-labelledby="shop-title">
+        <div class="section-head">
+          <p class="label">Official Store Style</p>
+          <h2 id="shop-title">Fan Essentials</h2>
+        </div>
+        <div class="shop-grid">
+          <article>
+            <h3>Home Kit 25/26</h3>
+            <p>Classic blaugrana stripes with a modern fit.</p>
+            <a href="#" aria-label="Buy Home Kit">Shop now</a>
+          </article>
+          <article>
+            <h3>Training Jacket</h3>
+            <p>Warm-up comfort inspired by matchday apparel.</p>
+            <a href="#" aria-label="Buy Training Jacket">Shop now</a>
+          </article>
+          <article>
+            <h3>Barça Scarf</h3>
+            <p>Matchday staple for every supporter in the stands.</p>
+            <a href="#" aria-label="Buy Barca Scarf">Shop now</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Inspired fan concept website • Not an official FC Barcelona site.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
